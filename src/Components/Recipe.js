@@ -1,26 +1,26 @@
-import {Link, useNavigate} from "react-router-dom";
+import { Link } from "react-router-dom";
 
+const Recipe = ({ data }) => {
+  console.log(data);
 
-const Recipe = ({data}) => {
-    console.log(data);
-    const recipes = data.items;
-    console.log(recipes);
-
-    // eventuell for.each() - Methode anwenden
-    // for each object in an array, create a div with title, picture and button
-
-
-    // console.log(data.items[0].fields.bild.fields.file)
-    // console.log(data.items);
-   
-    
-    
-    // const {items} = data;
-    // console.log("showdata:" + items)
-    
-  return 
-    
-  
+  return (
+    <>
+      <h1>Rezepte</h1>
+      {data.map((item) => (
+        <div>
+          <h2>{item.fields.berschrift}</h2>
+          <img
+            src={item.fields.bild.fields.file.url}
+            width="500"
+            height="300"
+          />
+          <Link to={item.sys.id}>
+            <button>Zum Produkt</button>
+          </Link>
+        </div>
+      ))}
+    </>
+  );
 };
 
 export default Recipe;
