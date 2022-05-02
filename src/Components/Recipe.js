@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 const Recipe = ({ data }) => {
-  console.log(data);
+  //console.log(data);
 
   return (
     <>
       <h1>Rezepte</h1>
-      {data.map((item) => (
-        <div>
+      {data.map((item, index) => (
+        <div key={index}>
           <h2>{item.fields.berschrift}</h2>
           <img
             src={item.fields.bild.fields.file.url}
