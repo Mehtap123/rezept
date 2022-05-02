@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.images{
+  width:70px;
+  height:70px;
+}
+
+.recipe{
+  width:30%;
+  padding-bottom: 3em;
+  text-align: center;
+  float: left;
+}
+
+.test{
+  width: 100%;
+  
+}
+
+.testtest{
+ margin-top: 10px;
+}
