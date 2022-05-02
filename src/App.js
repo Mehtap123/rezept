@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   const recipes = data.items;
-  console.log(recipes);
+  //console.log(recipes);
 
   // console.log(data);
 
