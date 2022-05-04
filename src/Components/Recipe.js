@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Recipe = ({ data }) => {
-  //console.log(data);
 
-  return (
+  return (    
     <div className="bckgrnd">
       <h1 className="heading">Rezepte</h1>
 
@@ -22,6 +21,7 @@ const Recipe = ({ data }) => {
           </div>
         </div>
       ))}
+      
     </div>
   );
 };

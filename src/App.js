@@ -21,24 +21,18 @@ function App() {
   }, []);
 
   const recipes = data.items;
-  //console.log(recipes);
-
-  // console.log(data);
 
   return (
     <>
       {recipes ? (
         <Routes>
           <Route path="/" element={<Recipe data={recipes}/>}/>
-          <Route path=":id" element={<RecipeInfo data={recipes}/>}/> 
-        
+          <Route path=":id" element={<RecipeInfo data={recipes}/>}/>         
         </Routes>
       ) : (
         "Loading......."
       )}
-    </>
-
-    
+    </>    
   );
 }
 
