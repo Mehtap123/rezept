@@ -8,7 +8,7 @@ const Recipe = ({ data }) => {
       <h1 className="heading">Rezepte</h1>
 
       {data.map((item, index) => (
-        <div className="card" key={index}>
+        <div className="card recipe-main" key={index}>
           <img
             src={item.fields.bild.fields.file.url}
             className="card-img-top images"

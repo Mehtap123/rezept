@@ -21,14 +21,17 @@ const RecipeInfo = ({data}) => {
 
     <>
     {foundRecipe && 
-      <div>
-        <h2>{foundRecipe.fields.berschrift}</h2>
-        <img src={foundRecipe.fields.bild.fields.file.url}/>
-        <ul>
-          {zutaten.map((zutat, index) => <li key={index}>{zutat}</li>)}
-        </ul>
-        <p>{foundRecipe.fields.zubereitung}</p>
-        <button onClick={handleClick}>Home</button>
+      <div className="card recipe-info">
+        <img className="card-img-top image" src={foundRecipe.fields.bild.fields.file.url}/>
+        <div className="card-body">
+          <h1 className="card-title">{foundRecipe.fields.berschrift}</h1>
+          
+          <ul>
+            {zutaten.map((zutat, index) => <li key={index}>{zutat}</li>)}
+          </ul>
+          <p className="card-text">{foundRecipe.fields.zubereitung}</p>
+          <button onClick={handleClick} className="btn btn-primary">Home</button>
+        </div>
 
 
 
