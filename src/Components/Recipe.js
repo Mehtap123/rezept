@@ -16,7 +16,7 @@ const Recipe = ({ data }) => {
             <h3 className="card-title">{item.fields.berschrift}</h3>
 
             <Link to={item.sys.id}>
-              <button className="btn btn-primary btnstyle">Zum Produkt</button>
+              <button className="btn btn-primary btnstyle">Zum Rezept</button>
             </Link>
           </div>
         </div>
