@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/recipes")
+    fetch("https://still-harbor-13502.herokuapp.com/api/recipes")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => console.log(error));
