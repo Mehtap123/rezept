@@ -1,4 +1,6 @@
-This React-app pulls Articles from a Contentful API and displays the Data dynamically.
+//This React-app pulls Articles from a Contentful API and displays the Data dynamically. <- this is old news!
+
+Our updated App fetches the recipes from our custom API, you can fetch from https://yammi-yammi-yammi-recipes.herokuapp.com/api/recipes!
 
 The current Database contains a collection of tasty Recepies!
 
@@ -12,4 +14,5 @@ Imported from React-/router-dom:
 
 Deployed via Netlify.
 
-Give it a try @ https://6272a04e4bf68b126ffcf0e6--singular-faloodeh-39b03f.netlify.app/ !
+Give it a try @ https://yummy-yummy-recipes.netlify.app/ !
+
